@@ -1,1 +1,9 @@
-<p>done works!</p>
+
+        <h3 class="text-success">Tamamlanan İşler Listesi</h3>
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let Done of doneModels"> {{ Done.title}}
+            <button class="btn btn-danger" (click)="changeDone(Done)">Sil</button>  
+          </li>
+          
+          
+        </ul>

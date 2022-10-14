@@ -1,1 +1,7 @@
-<p>undone works!</p>
+<h3 class="text-primary">Yakılacak İşler Listesi</h3>
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let unDone of UnDoneModels"> {{ unDone.title}} 
+            <button class="btn btn-primary mx-4" (click)="complete(unDone)">Tamamlandı</button>
+            <button class="btn btn-danger mx-4" (click)="deleteUnDone(unDone)">Sil</button>
+          </li>
+        </ul>

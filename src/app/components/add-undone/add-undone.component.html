@@ -1,0 +1,5 @@
+<label for="input" class="label-control">Yapılacak İş</label>
+            <!-- <input class="form-control" id="input" [(ngModel)]="unDoneInput" type="text"> -->
+            <input class="form-control" id="input"  type="text" #DoneInput>
+            <button class="btn btn-primary mt-2" (click)="addDoneInput(DoneInput)">Ekle</button>
+            <ng-content ></ng-content>

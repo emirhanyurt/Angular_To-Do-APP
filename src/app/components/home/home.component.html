@@ -1,1 +1,17 @@
-<p>home works!</p>
+<div class="container">
+    <div class="mb-3 mt-2">
+            <app-add-undone [UnDoneModels]="UnDoneModels">
+              <h1>Başlık</h1>
+            </app-add-undone>
+    </div>
+    <div class="row mt-2">
+      <div class="col-md-6">
+        <app-undone [UnDoneModels]="UnDoneModels" [doneModels]="doneModels"></app-undone>
+      </div>
+      <div class="col-md-6">
+       <app-done [doneModels]="doneModels" [UnDoneModels]="UnDoneModels"></app-done>
+      </div>
+  
+    </div>
+  </div>
+  

@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { DoneComponent } from './components/done/done.component';
 import { UndoneComponent } from './components/undone/undone.component';
+import { AddUndoneComponent } from './components/add-undone/add-undone.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     DoneComponent,
-    UndoneComponent
+    UndoneComponent,
+    AddUndoneComponent
   ],
   imports: [
     BrowserModule,
